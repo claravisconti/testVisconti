@@ -12,100 +12,98 @@
 </head>
 
 <body>
-  <div class="menutop">
-    <div>
+
+  <div class="shadow-lg">
       <%- include('partials/topbar.ejs') %>
       <%- include('partials/nav.ejs') %>
-    </div>
   </div>
 
+  <section class="greyColor">
 
-  <section class="greyColor">  
+    <div class="container">
+      <div class="row">
 
-  <div class="container">
-    <div class="row">
+        <!-- Barra lateral -->
 
-      <!-- Barra lateral -->
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 containerFiltro">
 
-      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 containerFiltro">
+          <h4 class="zapatillasfont">Zapatillas</h4>
+          <hr>
 
-        <h4 class="zapatillasfont">Zapatillas</h4>
-        <hr>
+          <h4 class="filtrarfont">Filtrar</h4>
 
-        <h4 class="filtrarfont">Filtrar</h4>
+          <div class="listado">
 
-        <div class="listado">
+            <ul class="listaCategoria">
 
-          <ul class="listaCategoria shadow-lg">
+              <li>Categoría</li>
 
-            <li>Categoría</li>
+              <ul class="listaSubcategoria">
+                <li>Zapatillas</li>
+                <li>Zapatos</li>
+                <li>Botas</li>
+                <li>Sandalias</li>
+                <li>Pantuflas</li>
+              </ul>
 
-            <ul class="listaSubcategoria">
-              <li>Zapatillas</li>
-              <li>Zapatos</li>
-              <li>Botas</li>
-              <li>Sandalias</li>
-              <li>Pantuflas</li>
+              <li>Talle</li>
+
+              <ul class="listaSubcategoria">
+                <li>36</li>
+                <li>38</li>
+                <li>40</li>
+                <li>42</li>
+                <li>44</li>
+              </ul>
+
+              <li>Color</li>
+
+              <ul class="listaSubcategoria">
+                <li>Amarillo</li>
+                <li>Negro</li>
+                <li>Verde</li>
+                <li>Azul</li>
+                <li>Blanco</li>
+              </ul>
+
             </ul>
-
-            <li>Talle</li>
-
-            <ul class="listaSubcategoria">
-              <li>36</li>
-              <li>38</li>
-              <li>40</li>
-              <li>42</li>
-              <li>44</li>
-            </ul>
-
-            <li>Color</li>
-
-            <ul class="listaSubcategoria">
-              <li>Amarillo</li>
-              <li>Negro</li>
-              <li>Verde</li>
-              <li>Azul</li>
-              <li>Blanco</li>
-            </ul>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-      <!-- Productos -->
-
-      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12 containerVenta">
-
-        <div class="containerProductos">
-          <div class="row">
-
-            <% for (item of productos) { %>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 pl-3 pr-3">
-
-              <div class="card border-0"  style="width:102%;">
-                <img class="card-img-top" src="../images/<%=item.imagen%>" alt="Card image cap">
-                <div class="card-body pt-2">
-                  <h6 class="card-title mb-1"><%=item.nombre %></h6>
-                  <p class="card-text"><%=item.precio %></p>
-
-                </div>
-              </div>
-
-            </div>
-
-            <% } %>
-
 
           </div>
 
         </div>
+
+        <!-- Productos -->
+
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12 containerVenta">
+
+          <div class="containerProductos">
+            <div class="row">
+
+              <% for (item of productos) { %>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 pl-3 pr-3">
+
+                <div class="card border-0" style="width:102%;">
+                  <img class="card-img-top" src="../images/<%=item.imagen%>" alt="Card image cap">
+                  <div class="card-body pt-2">
+                    <h6 class="card-title mb-1"><%=item.nombre %></h6>
+                    <p class="card-text"><%=item.precio %></p>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <% } %>
+
+
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
     </div>
-
-  </div>
 
   </section>
 
