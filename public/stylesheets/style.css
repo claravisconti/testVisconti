@@ -1,6 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;   
+  font-size: 12px; 
   }
 
   .container-fluid, .row {
@@ -74,6 +74,12 @@ padding: 0 60px;
   font-weight: 300;
 }
 
+/*Section*/
+
+.greyColor, .card-body {
+  background-color: #FAFAFA;
+}
+
 /*Barra lateral*/
 
 hr {
@@ -112,8 +118,7 @@ hr {
 /*Caja Productos*/
 
 .containerVenta {
-  background-color: red;
-  margin: 2% 0;
+    margin: 2% 0;
 }
 
 .card-img-top {
@@ -129,3 +134,4 @@ hr {
   font-size: 1.1em;
   font-weight: 600;
 }
+
