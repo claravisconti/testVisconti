@@ -74,16 +74,12 @@ padding: 0 60px;
   font-weight: 300;
 }
 
-/*Barra lateral - Productos */
+/*Barra lateral*/
 
 hr {
   border: none;
   height: 1px;
   background-color: black; /* Modern Browsers */
-}
-
-.containerCaja {
-  margin: 0 10%;
 }
 
 .containerFiltro {
@@ -115,7 +111,21 @@ hr {
 
 /*Caja Productos*/
 
-.caja2 {
+.containerVenta {
   background-color: red;
-  height: auto
+  margin: 2% 0;
+}
+
+.card-img-top {
+  border-bottom: 1.5px solid #030B1C;
+}
+
+.card-title {
+  font-size: 1.1em;
+  font-weight: 420;
+}
+
+.card-text {
+  font-size: 1.1em;
+  font-weight: 600;
 }
