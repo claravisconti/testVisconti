@@ -198,5 +198,7 @@ hr {
 }
 
 .menutop {
-  box-shadow: 10px 5px 5px red;
+  -webkit-box-shadow: 2px 6px 10px -6px rgba(0,0,0,0.51);
+  -moz-box-shadow: 2px 6px 10px -6px rgba(0,0,0,0.51);
+  box-shadow: 2px 6px 10px -6px rgba(0,0,0,0.51);
 }
