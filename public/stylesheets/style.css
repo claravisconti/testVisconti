@@ -10,9 +10,13 @@
 
   /* Topbar */
 
-  .logo {
+  .colLogo {
     display: flex;
     justify-content: center;
+  }
+
+  .logo {
+    max-height: 30px;
   }
 
   .iconosTopbar {
@@ -27,10 +31,22 @@
   text-align: center;
 }
 
-.icons {
+.icons, .icon {
   margin-left:10px;
   height:25px;
 }
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin-top: 15px;
+    height: 50%;
+  }
+
+  .icons {
+   display: none;
+  }
+
+ }
 
 /* Nav */
 
@@ -74,11 +90,23 @@ padding: 0 60px;
   font-weight: 300;
 }
 
+@media only screen and (max-width: 600px) {
+  .navRow { 
+   padding: 5% 0;
+  }
+ }
+
 /*Section*/
 
 .greyColor, .card-body {
   background-color: #FAFAFA;
 }
+
+@media only screen and (max-width: 600px) {
+ .card-body {
+    background-color:white;
+  }
+ }
 
 /*Barra lateral*/
 
