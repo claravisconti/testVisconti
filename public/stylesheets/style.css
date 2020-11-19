@@ -22,7 +22,7 @@
 
 .navRow {
   padding: 1%;
-  background-color: black;
+  background-color: #000000;
   color:white;
   text-align: center;
 }
@@ -39,7 +39,7 @@
 }
 
 .bg-color{
-  background-color: black;
+  background-color: #000000;
 }
 
 .centrado {
@@ -85,7 +85,7 @@ padding: 0 60px;
 hr {
   border: none;
   height: 1px;
-  background-color: black; /* Modern Browsers */
+  background-color:#000000; /* Modern Browsers */
 }
 
 .containerFiltro {
