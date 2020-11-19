@@ -120,6 +120,12 @@ hr {
   font-size: 1.1em;
 }
 
+@media only screen and (max-width: 600px) {
+ .containerFiltro {
+  display: none;
+ }
+}
+
 /*Caja Productos*/
 
 .containerVenta {
