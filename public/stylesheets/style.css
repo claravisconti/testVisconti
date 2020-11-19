@@ -28,7 +28,7 @@
 }
 
 .icons {
-  margin-left:3px;
+  margin-left:10px;
   height:25px;
 }
 
@@ -89,7 +89,7 @@ hr {
 }
 
 .containerFiltro {
-  padding: 2% 0;
+  padding: 4% 0;
 }
 
 .listado {
@@ -106,19 +106,24 @@ hr {
   list-style-type: none;
   margin: 0;
   padding: 5px 15px;
+
 }
 
 .listaCategoria > li{
   background-color: #E4E8EE;
   font-weight: 500;
   padding: 5px 15px;
+  font-size: 1.1em;
+}
 
+.listaSubcategoria > li{
+  font-size: 1.1em;
 }
 
 /*Caja Productos*/
 
 .containerVenta {
-    margin: 2% 0;
+    margin: 4% 0;
 }
 
 .card-img-top {
