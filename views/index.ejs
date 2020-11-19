@@ -12,9 +12,11 @@
 </head>
 
 <body>
-  <div id="header">
-    <%- include('partials/topbar.ejs') %>
-    <%- include('partials/nav.ejs') %>
+  <div class="menutop">
+    <div>
+      <%- include('partials/topbar.ejs') %>
+      <%- include('partials/nav.ejs') %>
+    </div>
   </div>
 
 
@@ -27,14 +29,14 @@
 
       <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 containerFiltro">
 
-        <h4>Zapatillas</h4>
+        <h4 class="zapatillasfont">Zapatillas</h4>
         <hr>
 
-        <h5>Filtrar</h5>
+        <h4 class="filtrarfont">Filtrar</h4>
 
         <div class="listado">
 
-          <ul class="listaCategoria">
+          <ul class="listaCategoria shadow-lg">
 
             <li>Categoría</li>
 
@@ -80,13 +82,12 @@
           <div class="row">
 
             <% for (item of productos) { %>
-
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 pl-3 pr-3">
 
               <div class="card border-0"  style="width:102%;">
                 <img class="card-img-top" src="../images/<%=item.imagen%>" alt="Card image cap">
-                <div class="card-body">
-                  <h6 class="card-title"><%=item.nombre %></h6>
+                <div class="card-body pt-2">
+                  <h6 class="card-title mb-1"><%=item.nombre %></h6>
                   <p class="card-text"><%=item.precio %></p>
 
                 </div>
